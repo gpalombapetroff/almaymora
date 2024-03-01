@@ -1,0 +1,9 @@
+.textodevoluciones{
+    justify-content: center;
+    margin: 50px;
+    padding: 50px;
+    
+    .h22 {
+        @include flex(row, center, center);
+    }
+}
