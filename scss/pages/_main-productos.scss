@@ -1,48 +1,50 @@
-.caja {
-    display: inline-block;
-    align-items: center;
-    text-align: center;
-    @extend %estilos;
-    
-    background-image: linear-gradient(to bottom, #f8f8f8, #faeef6, #ffe2e4, #ffdbc7, #ebdbad);
-    box-shadow: -8px 19px 15px -8px rgba(0, 0, 0, 0.86);
-    -webkit-box-shadow: -8px 19px 15px -8px rgba(0, 0, 0, 0.86);
-    -moz-box-shadow: -8px 19px 15px -8px rgba(0, 0, 0, 0.86);
-
-    .foto {
-        display: flexbox;
-        border: 1px solid #ccc;
-        margin: 10px;
-        padding: 10px 10px 10px 10px;
-        border-radius: 50px;
-
-    }
-
-    .foto-torta {
-        width: 300px;
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 10px;
+    padding: 20px;
+    justify-content: center;
+    .caja {
+        display: inline-block;
+        align-items: center;
+        text-align: center;
+        @extend %estilos;
         
-        border-radius: 50px;
-
-        &:hover {
-            transform: scale(1.2);
-            transition: 2s;
+        background-image: linear-gradient(to bottom, #f8f8f8, #faeef6, #ffe2e4, #ffdbc7, #ebdbad);
+        box-shadow: -8px 19px 15px -8px rgba(0, 0, 0, 0.86);
+        -webkit-box-shadow: -8px 19px 15px -8px rgba(0, 0, 0, 0.86);
+        -moz-box-shadow: -8px 19px 15px -8px rgba(0, 0, 0, 0.86);
+    
+        .foto {
+            display: flexbox;
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px 10px 10px 10px;
+            border-radius: 50px;
+    
+        }
+    
+        .foto-torta {
+            width: 300px;
+            
+            border-radius: 50px;
+        }
+    
+        .listap {
+            text-align: center;
+        }
+    
+        .lista {
+            text-align: center;
+            list-style-type: none;
+            align-items: center;
+            justify-content: center;
+            padding-left: 0;
+    
         }
     }
-
-    .listap {
-        text-align: center;
-    }
-
-    .lista {
-        text-align: center;
-        list-style-type: none;
-        align-items: center;
-        justify-content: center;
-        padding-left: 0;
-
-    }
+    
 }
-
 
 .tabla {
     width: 80%;

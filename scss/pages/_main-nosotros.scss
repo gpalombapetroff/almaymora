@@ -1,7 +1,21 @@
 
-.textonosotros {
-    padding: 50px;
+.main{
+.card1 {
+    margin: 100px;
+    width: 800px;
+    
 
-
-
+    .texto {
+        font-size: 15px;
+        line-height: 1.5;
+        letter-spacing: 0;
+        margin: 0%;
+        width: 100%;
+        .textonosotros {
+            padding: 50px;
+        }
+        
+    }
 }
+}
+
