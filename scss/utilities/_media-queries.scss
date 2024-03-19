@@ -1,8 +1,5 @@
 @media screen and (min-width: 320px) and (max-width: 768px) {
-    * {
-        border: solid 1px black;
-    }
-
+    
     .body {
         width: 320px;
         display: flex;
@@ -69,8 +66,8 @@
 
         .card {
             align-items: center;
-            margin-left: 70px;
-            width: 320px;
+            margin-left: 20px;
+            width: 300px;
         }
     }
 
@@ -82,13 +79,13 @@
     }
 
     .caja {
-        width: 300px;
-        margin-right: 0px;
+        width: 280px;
+        margin-left: 10px;
 
         .foto {
             .foto-torta {
-                width: 270px;
-                margin-right: 40px;
+                width: 235px;
+                
                 padding: 5px;
             }
         }
@@ -236,7 +233,7 @@
 
         .card {
             align-items: center;
-            margin-right: 50px;
+            margin: 50px;
             height: 600px;
         }
     }
@@ -251,12 +248,12 @@
         align-items: center;
         margin-left: 50px;
         height: 600px;
+        width: 280px;
 
         .foto {
             .foto-torta {
-                width: 270px;
-                margin-right: 40px;
-                padding-right: 20px;
+                width: 255px;
+                
                 align-items: center;
             }
         }
@@ -269,10 +266,10 @@
 
     .card1 {
         margin: 90px;
-        width: 600px;
+        width: 580px;
 
         .texto {
-            font-size: 1rem;
+            font-size: 1.5rem;
 
             .textocomocomprar {
                 margin: 5px;

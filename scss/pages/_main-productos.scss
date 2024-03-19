@@ -6,11 +6,11 @@
     justify-content: center;
     border-radius: 50px;
     .caja {
+        width: 300px;
         display: inline-block;
         align-items: center;
         text-align: center;
         @extend %estilos;
-        
         background-image: linear-gradient(to bottom, #f8f8f8, #faeef6, #ffe2e4, #ffdbc7, #ebdbad);
         box-shadow: -8px 19px 15px -8px rgba(0, 0, 0, 0.86);
         -webkit-box-shadow: -8px 19px 15px -8px rgba(0, 0, 0, 0.86);
@@ -27,7 +27,7 @@
         }
     
         .foto-torta {
-            width: 300px;
+            width: 200px;
             
             border-radius: 50px;
         }

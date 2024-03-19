@@ -4,11 +4,13 @@
     grid-gap: 10px;
     padding: 20px;
     justify-content: center;
+    margin-left: 60px;
+
 }
 
 .card {
-    @extend %estilos; /* No tengo información sobre la definición de %estilos, asegúrate de que esté definido correctamente */
-
+    @extend %estilos;
+    width: 50px;
     justify-content: center;
     text-align: center;
     background-image: linear-gradient(to bottom, #f8f8f8, #faeef6, #ffe2e4, #ffdbc7, #ebdbad);
