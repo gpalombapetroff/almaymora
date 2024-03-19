@@ -103,7 +103,7 @@ body {
   text-align: center;
 }
 
-.hamburguesa {
+.hamburguesa .navbar-toggler {
   border: none;
 }
 
@@ -191,6 +191,7 @@ body {
   grid-gap: 10px;
   padding: 20px;
   justify-content: center;
+  border-radius: 50px;
 }
 .grid-container .caja {
   display: inline-block;
@@ -200,6 +201,7 @@ body {
   box-shadow: -8px 19px 15px -8px rgba(0, 0, 0, 0.86);
   -webkit-box-shadow: -8px 19px 15px -8px rgba(0, 0, 0, 0.86);
   -moz-box-shadow: -8px 19px 15px -8px rgba(0, 0, 0, 0.86);
+  border-radius: 50px;
 }
 .grid-container .caja .foto {
   display: flexbox;
@@ -243,7 +245,6 @@ body {
 }
 
 .main .card1 {
-  margin: 100px;
   width: 800px;
 }
 .main .card1 .texto {
@@ -297,78 +298,236 @@ body {
 
 @media screen and (min-width: 320px) and (max-width: 768px) {
   .body {
-    margin: 0 auto;
+    width: 320px;
+    margin: 0px;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow-x: hidden;
   }
-  .body .main {
+  .body .hamburguesa {
+    position: fixed;
+    width: 320px;
+    z-index: 100;
+  }
+  .body .hamburguesa .navbar-toggler {
+    position: sticky;
+    z-index: 1000;
+  }
+  .almafoto {
+    width: 280px;
+  }
+  .divmenu .divmenuul {
+    padding: 0px;
+  }
+  .divmenu .div1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 90%;
   }
-  .body .main .grid-container {
+  .carousel-inner {
+    height: 310px;
+    border-radius: 50px;
+    max-width: 100%;
+  }
+  .carousel-inner .imagencarrusel {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main .texto {
+    width: 320px;
+    text-align: center;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 300px;
+    align-items: center;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  .grid-container .card {
+    align-items: center;
+    margin-left: 70px;
+    width: 320px;
+  }
+  .whatsapp-logo {
+    display: flex;
+    margin-right: 20px;
+    z-index: 1;
+  }
+  .caja {
+    width: 300px;
+    margin-right: 5px;
+  }
+  .caja .foto .foto-torta {
+    width: 270px;
+    margin-right: 40px;
+    padding: 5px;
+  }
+  .tabla {
+    margin-top: 20px;
+  }
+  .card1 {
+    margin: 10px;
+    width: 300px;
+  }
+  .card1 .texto {
+    font-size: 1rem;
+  }
+  .card1 .texto .textocomocomprar {
+    margin: 5px;
+    padding: 5px;
+  }
+  .card1 .texto .textodevoluciones {
+    margin: 5px;
+    padding: 5px;
+  }
+  .card1 .formulario .form input[type=text],
+  .card1 .formulario .form input[type=email] {
+    display: inline;
+    width: 250px;
+    text-align: center;
+  }
+  .card1 .formulario .form .nombre {
+    width: 200px;
+  }
+  .card1 .formulario .form .email1 {
+    width: 255px;
+  }
+  .card1 .formulario .form .email1 label[for=email] {
+    display: block;
+    width: 250px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .card1 .formulario .form .email1 #mensaje {
+    width: 600px;
+  }
+  .card1 .formulario label[for=mensaje] {
+    display: block;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .body {
+    margin: 0px;
+    padding: 0;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 768px;
   }
-}
-.main1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 90%;
-}
-.main1 .grid-container1 {
-  display: flex;
-  flex-direction: column;
-}
-.main1 .caja {
-  margin: 10px;
-}
-
-.main .card1 {
-  margin: 0 auto;
-  width: 300px;
-  height: 500px;
-}
-.main .card1 .parrafosnosotros {
-  width: 90%;
-  text-align: center;
-  margin: 10px;
-}
-.main .form {
-  max-width: 100%;
-}
-.main .form .input[type=nombre],
-.main .form textarea {
-  width: 90px;
-  margin: 10px;
-}
-.main .form .email1 {
-  margin: auto;
-  text-align: center;
-}
-.main .form .email1 .input[type=email],
-.main .form .email1 textarea {
-  width: 260px;
-  margin-left: 100px;
-  box-sizing: border-box;
-}
-.main .form .input[type=text],
-.main .form textarea {
-  width: 170px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
-.main .button[type=submit] {
-  width: 80%;
+  .body .hamburguesa {
+    position: fixed;
+    width: 768px;
+    z-index: 100;
+  }
+  .body .hamburguesa .navbar-toggler {
+    position: sticky;
+    z-index: 1000;
+  }
+  .almafoto {
+    width: 400px;
+  }
+  .divmenu .divmenuul {
+    padding: 0px;
+  }
+  .divmenu .div1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .carousel-inner {
+    height: 500px;
+    border-radius: 50px;
+    width: 768px;
+  }
+  .carousel-inner .imagencarrusel {
+    width: 768px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .main {
+    width: 768px;
+  }
+  .main .texto {
+    width: 500px;
+    text-align: center;
+    margin-left: 150px;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 768px;
+    align-items: center;
+    padding: 0px;
+    margin-left: 5px;
+  }
+  .grid-container .card {
+    align-items: center;
+    margin-right: 50px;
+    height: 600px;
+  }
+  .whatsapp-logo {
+    display: flex;
+    margin-right: 10px;
+    z-index: 1;
+  }
+  .caja {
+    align-items: center;
+    margin-left: 50px;
+    height: 600px;
+  }
+  .caja .foto .foto-torta {
+    width: 270px;
+    margin-right: 40px;
+    padding-right: 20px;
+    align-items: center;
+  }
+  .tabla {
+    margin-top: 30px;
+    width: 700px;
+  }
+  .card1 {
+    margin: 90px;
+    width: 600px;
+  }
+  .card1 .texto {
+    font-size: 1rem;
+  }
+  .card1 .texto .textocomocomprar {
+    margin: 5px;
+    padding: 5px;
+  }
+  .card1 .texto .textodevoluciones {
+    margin: 5px;
+    padding: 5px;
+  }
+  .card1 .formulario .form {
+    align-items: center;
+  }
+  .card1 .formulario .form input[type=text],
+  .card1 .formulario .form input[type=email] {
+    display: inline;
+    width: 500px;
+    text-align: center;
+  }
+  .card1 .formulario .form .nombre {
+    width: 500px;
+    text-align: center;
+  }
+  .card1 .formulario .form .email1 {
+    width: 500px;
+    align-items: center;
+    margin-left: 28px;
+  }
+  .card1 .formulario .form .email1 label[for=email] {
+    display: block;
+    width: 500px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
